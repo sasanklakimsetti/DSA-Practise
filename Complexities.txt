@@ -1,0 +1,4 @@
+Complexities
+
+time --->> no.of iterations
+space --->> max space your program is using

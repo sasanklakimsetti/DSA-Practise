@@ -1,0 +1,76 @@
+Infix to Postfix exxpression:
+
+Infix takes more time to computer to scan the expression.
+
+ So Postfix notation used to decrease time complexity as less scans needed.
+
+Precedence: 
+
+( ) ---> irrespective of precedence if paranthesis occurs whatever the expression inside, it should be evaluated first.
+
+^  ---> highest
+
+* / 
+
++ - ---> lowest
+
+
+if operators with same precedence occurs, follow left to right
+
+
+500 + 125 - 66 * 9
+
+500 + 125 - 594
+
+625-594
+
+31
+
+Infix:
+
+3 + 5 * (5 / 5) - 2 ^ 2
+
+evaluation of infix expression:
+
+3 + 5 * 1 - 2 ^ 2
+
+3 + 5 * 1 - 4
+
+3 + 5 - 4
+
+4
+
+Postfix:
+
+3 + 5 * (5 5 /) - 2 ^ 2
+
+3 + 5 * (5 5 /) - 2 2 ^
+
+3 + (5 5 5 / *) - (2 2 ^)
+
+3 5 5 5 / * + 2 2 ^ -
+
+
+evaluation of postfix expression:
+
+Golden Rule of thumb: The expression will be scanned from left to right and as soon as we will encounter an operator, we will apply it to the last two operands.
+
+3 5 5 5 / * + 2 2 ^ -
+
+---> 3 5 1 * + 2 2 ^ -
+---> 3 5 + 2 2 ^ -
+---> 8 2 2 ^ -
+---> 8 4 -
+---> 4
+
+Postfix expression doesn't require any precedence conditions and takes less time to scan by computer.
+
+ex: 854^2+*62^93*/-
+
+---> 8 625 2 + * 6 2 ^ 9 3 * / -
+---> 8 627 * 6 2 ^ 9 3 * / -
+---> 5016 6 2 ^ 9 3 * / -
+---> 5016 36 9 3 * / -
+---> 5016 36 27 / -
+---> 5016 1 -
+---> 5015

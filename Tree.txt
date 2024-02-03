@@ -1,0 +1,13 @@
+Tree:
+
+Inorder traversal of tree: Left Root Right
+
+Pre-order traversal of tree: Root Left Right
+
+
+Post-order traversal of tree: Left Right Root
+
+
+5 4 3 2 1
+
+Level Order Traversal: level 1,2....n
